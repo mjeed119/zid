@@ -1,0 +1,2330 @@
+{
+  "classes": {
+    "105": [
+      {
+        "id": "164716471",
+        "name": "ابراهيم اباكار علي آدم",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2380233359",
+        "name": "ابراهيم محمد بدر باجري",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2282407150",
+        "name": "احمد محمد صالح الحبشي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2285092272",
+        "name": "اصيل احمد محمد مجاهد",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1171456245",
+        "name": "الياس حبيب سالم الشهري",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 2.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2354736494",
+        "name": "اياد ادم على سعيد",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1151564018",
+        "name": "تركي وليد محمد البيشي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 0.0,
+          "ClassActivity": 10.0,
+          "Absence": 3.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1152847115",
+        "name": "حسام حسن عبده صعب",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 3.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1152606719",
+        "name": "حسام محمد حسن مقري",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1154987216",
+        "name": "خالد غازي علي المحمادي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 0.0,
+          "ClassActivity": 13.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "90474",
+        "name": "عامر بني امين عبد الامين فتح علي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2300992480",
+        "name": "عبد الباري الياس محفوظ الزبيدى",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1148193244",
+        "name": "عبدالعزيز حسن احمد مجرشي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 0.0,
+          "ClassActivity": 15.0,
+          "Absence": 2.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2408630859",
+        "name": "عبدالله ياسر عبدالله محمد",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2263255313",
+        "name": "عبدالمؤمن امان - عبدالمؤمن",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2292370307",
+        "name": "علي سالم عيظه بن عنبر",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2313715985",
+        "name": "علي محمد علي العمودي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2318631278",
+        "name": "عماد حميد حسين - عبدالخالق",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2303647867",
+        "name": "فراس علي اسماعيل عامر",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1217906633",
+        "name": "قاسم حسين محمد دغريري",
+        "grades": {
+          "Homework": 1.0,
+          "Research": 0.0,
+          "ClassActivity": 1.0,
+          "Absence": 7.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1158394088",
+        "name": "مازن عبده ابراهيم الجبير",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 0.0,
+          "ClassActivity": 15.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2365346184",
+        "name": "محسن ابراهيم محسن محمد بن عزان",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2390785034",
+        "name": "محسن محمد محسن علي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2306596889",
+        "name": "محمد أبو الطيب - حسين علي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2295808436",
+        "name": "محمد احمد صفوت زينو",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2294177569",
+        "name": "محمد خالد احمد عماد",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2302217589",
+        "name": "محمد صالح عمر جابر",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1149074690",
+        "name": "محمد عبدالله علي الغامدى",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2323505764",
+        "name": "محمد محمد أيوب خان حاجي عبدالولي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1160243313",
+        "name": "محمد ناصر عبدالله صالح",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 0.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "4136100403",
+        "name": "محمد هشام عزي عبدالرحمن",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 0.0,
+          "ClassActivity": 10.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2439979457",
+        "name": "مشعل اسماعيل عبدالله وصايا",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1158658680",
+        "name": "موسى متعب بن موسى آل غبساء",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1160494622",
+        "name": "وضاح سرور علي عبدالله",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2312105030",
+        "name": "وليد علي يحي علي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "4132838527",
+        "name": "يزن عبدالله يحي الواعظي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 3.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1011048122",
+        "name": "صهيب ابو القاسم محمد عمر",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      }
+    ],
+    "106": [
+      {
+        "id": "2293188161",
+        "name": "أحمد شوقي عبدالواسع محمد",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1151807243",
+        "name": "أحمد محمد سعد محبوب",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2217647268",
+        "name": "احمد اعجاز احمد خان",
+        "grades": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "4139248118",
+        "name": "احمد عادل سعيد علي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2298571254",
+        "name": "اياس علاء عمر بانافع العولقي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2422334892",
+        "name": "جواد جهاد محمد مطلق",
+        "grades": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1158563195",
+        "name": "حسام عادل عياش الصبياني",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 2.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2309893333",
+        "name": "حسين صالح علي السيلاني",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 4.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "9683741520",
+        "name": "راشد نبيل راشد عبدالله",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2321229862",
+        "name": "زياد احمد سعد خميس",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 2.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1152080493",
+        "name": "سعيد عادل عمر الحداد",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 4.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2295744979",
+        "name": "سلطان سعيد كمال كمال",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 2.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1153169972",
+        "name": "سلطان محمد علي الغامدي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 4.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2416498729",
+        "name": "سهيل عبدالله مظهر ابوطالب",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1160234086",
+        "name": "شبيب عبدالله حسين سنان",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2361149178",
+        "name": "صديق عبد الرحمن عباس عبد الله",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 0.0,
+          "ClassActivity": 10.0,
+          "Absence": 2.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2383034325",
+        "name": "عامر هيثم عبدالقادر عبده علي",
+        "grades": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1160508898",
+        "name": "عبدالرحمن حسين علي احمد",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2361351998",
+        "name": "عبدالرحمن عبدالله عبدالرحمن خزام",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2307852265",
+        "name": "عبدالرحمن ناصر محمد بهلول",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1153927395",
+        "name": "عبدالرحيم عبدالله عابد العقيبي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 3.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2290312327",
+        "name": "عبدالله محمد زين عبدالله",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2384836496",
+        "name": "عبدالله محمد عبدالله باصريح",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "4050542382",
+        "name": "عبدالله محمد قائد المقدم",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 2.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1160492306",
+        "name": "عدي صدام حسين المرهبي",
+        "grades": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1153223035",
+        "name": "علي طارق جبريل صباحي",
+        "grades": {
+          "Homework": 5.0,
+          "Research": 0.0,
+          "ClassActivity": 3.0,
+          "Absence": 3.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2331894051",
+        "name": "فارس رمزي علي عبدالله",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2298616737",
+        "name": "مؤيد محمد احمد العطار",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2291779177",
+        "name": "مازن خالد مبارك خيشان",
+        "grades": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 2.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2393539560",
+        "name": "محمد عبدالجليل محمد السحله",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 2.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2310760109",
+        "name": "محمد علي محمد سالم",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1149747253",
+        "name": "محمد علي محمد مقري",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 2.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "129135",
+        "name": "محمد نصار منصور الغريب",
+        "grades": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2367098932",
+        "name": "محمد ياسر عمر رميش",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 2.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1138297161",
+        "name": "وائل سعيد بن علي الغامدي",
+        "grades": {
+          "Homework": 5.0,
+          "Research": 0.0,
+          "ClassActivity": 5.0,
+          "Absence": 2.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2287773135",
+        "name": "يامن عارف عبدالفتاح سعيد",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2301776346",
+        "name": "يحي شوعي يحي عمر",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2299087342",
+        "name": "يزن محمد احمد قروي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2272953031",
+        "name": "يونس خان - محمد",
+        "grades": {
+          "Homework": 8.0,
+          "Research": 5.0,
+          "ClassActivity": 8.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      }
+    ],
+    "107": [
+      {
+        "id": "1153162589",
+        "name": "ابراهيم خالد ابراهيم الشمراني",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1150824116",
+        "name": "اياد ماجد بن محمد الغامدي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2421310075",
+        "name": "بدر يوسف ادم ادريس",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2611977543",
+        "name": "حمزه سامح سيد ابراهيم",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 0.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2295794859",
+        "name": "رضوان نور محمد روح الامين",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "4828917585",
+        "name": "ريان مراد  حسن",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1149785113",
+        "name": "سالم عبدالله محمد الشمراني",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2310766155",
+        "name": "سليمان فتيني احمد احمد",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "249693",
+        "name": "سمير بني امين عبدالامين فتح علي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 2.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1160492309",
+        "name": "صادق عبدالملك صادق المليكي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1152656680",
+        "name": "عائض محمد عائض الرفاعي الغامدي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2306219094",
+        "name": "عبد العزيز حميد احمد العماد",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 0.0,
+          "ClassActivity": 15.0,
+          "Absence": 3.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "418305696101",
+        "name": "عبدالرزاق محمد مهدي فارس",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2236346678",
+        "name": "عبدالصمد شكر الله خان رحمة الله خان",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1155811274",
+        "name": "عبدالعزيز علي عثمان فقيهي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1010780607",
+        "name": "عبدالله حامد عبدالله حاج",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1152295257",
+        "name": "عبدالله عقيلي احمد الشيخي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2257752499",
+        "name": "عبدالله نبيل سعيد صالح",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 0.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1160492291",
+        "name": "علي سالم علي قاسم",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2388960458",
+        "name": "عماد موسى ادم محمد",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1010786944",
+        "name": "عمر اميدو محمد نور",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2361214394",
+        "name": "فارس محمد تاجل مستوئي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1150870739",
+        "name": "فواز عبدالله صالح عبدالله",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2336216235",
+        "name": "قصي وليد جمعه ابوصبيح",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 10.0,
+          "Absence": 4.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2290444260",
+        "name": "مؤيد منير علي بندر",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1151831227",
+        "name": "ماجد محمد جبرت الشمراني",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 0.0,
+          "ClassActivity": 10.0,
+          "Absence": 5.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2422033643",
+        "name": "ماهر سالم جعبل الهمامي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 5.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "4746967605",
+        "name": "محمد شرف علي الحمزي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 4.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "4141525099",
+        "name": "محمد مازن عبده غالب",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 0.0,
+          "ClassActivity": 15.0,
+          "Absence": 2.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1163925066",
+        "name": "مشعل عادل بن عيسي الجيزاني",
+        "grades": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 7.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2299572418",
+        "name": "مشعل وليد رجب رويشد",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2298905437",
+        "name": "مصعب محسن علي الشاخ",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1149868075",
+        "name": "مهند عبده يحي حكمي",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1140918960",
+        "name": "هلال عبدالله فتيني الصبياني",
+        "grades": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 7.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "1211262363",
+        "name": "وائل ماجد سعيد عبدالله",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 0.0,
+          "ClassActivity": 15.0,
+          "Absence": 3.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2290561519",
+        "name": "يزن فتحي اسماعيل محنبي",
+        "grades": {
+          "Homework": 5.0,
+          "Research": 5.0,
+          "ClassActivity": 5.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2301220089",
+        "name": "يزن محمد علي دمدم",
+        "grades": {
+          "Homework": 5.0,
+          "Research": 0.0,
+          "ClassActivity": 5.0,
+          "Absence": 5.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2374408827",
+        "name": "يوسف ادم يونس حسن",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "17165435",
+        "name": "يوسف سعيد مبارك العكبري",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 1.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      },
+      {
+        "id": "2310727843",
+        "name": "يوسف محمود يوسف نور",
+        "grades": {
+          "Homework": 10.0,
+          "Research": 5.0,
+          "ClassActivity": 15.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        },
+        "max": {
+          "Homework": 0.0,
+          "Research": 0.0,
+          "ClassActivity": 0.0,
+          "Absence": 0.0,
+          "Theoretical": 0.0,
+          "Practical": 0.0
+        }
+      }
+    ]
+  }
+}

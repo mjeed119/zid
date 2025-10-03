@@ -1,0 +1,13 @@
+:root { font-family: system-ui, -apple-system, "Segoe UI", Tahoma, Arial; }
+* { box-sizing: border-box; }
+body { margin: 0; background:#f6f7fb; color:#111; direction: rtl; }
+.container { max-width: 900px; margin: 24px auto; padding: 16px; }
+h1 { margin: 0 0 16px; font-size: 1.8rem; }
+.card { background:#fff; border:1px solid #e6e8ef; border-radius:12px; padding:16px; margin:12px 0; box-shadow:0 1px 3px rgba(0,0,0,.05); }
+label { display:block; margin-bottom:8px; font-weight:600; }
+select { width:100%; padding:10px 12px; border:1px solid #cfd3df; border-radius:8px; background:#fff; }
+.grades { width:100%; border-collapse: collapse; margin-top: 8px; }
+.grades th, .grades td { border:1px solid #e8eaf2; padding:10px; text-align:center; }
+.grades th { background:#f3f5fb; }
+.totals { display:flex; gap:16px; margin-top:10px; font-weight:600; }
+footer { text-align:center; margin-top:24px; color:#666; }

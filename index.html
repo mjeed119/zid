@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>بوابة الدرجات</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>بوابة الدرجات</h1>
+    <section class="card">
+      <label for="classSelect">اختر الفصل:</label>
+      <select id="classSelect"><option value="">— اختر —</option></select>
+    </section>
+
+    <section class="card" id="studentSection" style="display:none">
+      <label for="studentSelect">اختر اسمك:</label>
+      <select id="studentSelect"><option value="">— اختر —</option></select>
+    </section>
+
+    <section class="card" id="gradesSection" style="display:none">
+      <h2 id="studentHeader"></h2>
+      <div id="gradesTableWrapper"></div>
+      <div class="totals">
+        <div>المجموع: <span id="totalScore">—</span></div>
+        <div>النسبة: <span id="percentScore">—</span>%</div>
+      </div>
+    </section>
+
+    <footer><small>© <span id="year"></span> بوابة الدرجات</small></footer>
+  </main>
+
+  <script>
+    const COLUMNS = [
+      { key: "Homework", label: "الواجبات" },
+      { key: "Research", label: "البحث" },
+      { key: "ClassActivity", label: "النشاط الصفي" },
+      { key: "Absence", label: "الغياب" },
+      { key: "Theoretical", label: "الاختبار النظري" },
+      { key: "Practical", label: "الاختبار العملي" }
+    ];
+
+    const classSelect = document.getElementById("classSelect");
+    const studentSection = document.getElementById("studentSection");
+    const studentSelect = document.getElementById("studentSelect");
+    const gradesSection = document.getElementById("gradesSection");
+    const studentHeader = document.getElementById("studentHeader");
+    const gradesTableWrapper = document.getElementById("gradesTableWrapper");
+    const totalScoreEl = document.getElementById("totalScore");
+    const percentScoreEl = document.getElementById("percentScore");
+
+    let DATA = null, currentClass = null;
+
+    async function loadData() {
+      // جرّب الجذر أولًا ثم data/ احتياطًا
+let res = await fetch("students.json", { cache: "no-store" });
+if (!res.ok) res = await fetch("data/students.json", { cache: "no-store" });
+      if (!res.ok) throw new Error("تعذّر تحميل data/students.json");
+      DATA = await res.json();
+      const classes = Object.keys(DATA.classes || {});
+      classes.sort(new Intl.Collator('ar').compare);
+      for (const c of classes) {
+        const opt = document.createElement("option");
+        opt.value = c; opt.textContent = c;
+        classSelect.appendChild(opt);
+      }
+    }
+
+    function populateStudents(className) {
+      studentSelect.innerHTML = '<option value="">— اختر —</option>';
+      const students = DATA.classes[className] || [];
+      students.sort((a,b)=> new Intl.Collator('ar').compare(a.name,b.name));
+      for (const s of students) {
+        const opt = document.createElement("option");
+        opt.value = s.id; opt.textContent = s.name;
+        studentSelect.appendChild(opt);
+      }
+    }
+
+    function renderGrades(student) {
+      studentHeader.textContent = `${student.name} — ${currentClass}`;
+      const table = document.createElement("table");
+      table.className = "grades";
+      const thead = document.createElement("thead");
+      thead.innerHTML = "<tr><th>البند</th><th>الدرجة</th></tr>";
+      table.appendChild(thead);
+
+      const tbody = document.createElement("tbody");
+      let total = 0, maxTotal = 0;
+      for (const col of COLUMNS) {
+        const score = Number(student.grades?.[col.key] ?? 0);
+        const outOf = Number(student.max?.[col.key] ?? 0);
+        const tr = document.createElement("tr");
+        tr.innerHTML = `<td>${col.label}</td><td>${score}</td>`;
+        tbody.appendChild(tr);
+        total += score; maxTotal += outOf;
+      }
+      table.appendChild(tbody);
+      gradesTableWrapper.innerHTML = ""; gradesTableWrapper.appendChild(table);
+
+      totalScoreEl.textContent = `${total} / ${maxTotal}`;
+      percentScoreEl.textContent = maxTotal ? ((total / maxTotal) * 100).toFixed(2) : "0.00";
+    }
+
+    classSelect.addEventListener("change", () => {
+      currentClass = classSelect.value || null;
+      gradesSection.style.display = "none";
+      if (!currentClass) { studentSection.style.display = "none"; return; }
+      populateStudents(currentClass);
+      studentSection.style.display = "block";
+    });
+
+    studentSelect.addEventListener("change", () => {
+      const studentId = studentSelect.value || null;
+      gradesSection.style.display = "none";
+      if (!studentId) return;
+      const list = DATA.classes[currentClass] || [];
+      const student = list.find(s => String(s.id) === String(studentId));
+      if (!student) return;
+      renderGrades(student);
+      gradesSection.style.display = "block";
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+    loadData().catch(e => { alert(e.message); console.error(e); });
+  </script>
+</body>
+</html>
