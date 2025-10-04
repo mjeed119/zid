@@ -6,9 +6,22 @@
   <title>بوابة الدرجات</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    :root{ --bg:#f5f7fb; --card:#ffffff; --border:#e6e8ef; --muted:#7c8499;
-           --primary:#3b5bdb; --primary-weak:#ecf1ff; --ok:#2f9e44; --warn:#f08c00; }
-    body{background:var(--bg);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial}
+    /* وضع فاتح افتراضي */
+    :root{
+      --bg:#f5f7fb; --card:#ffffff; --border:#e6e8ef; --muted:#7c8499;
+      --primary:#3b5bdb; --primary-weak:#ecf1ff; --text:#0f1220;
+    }
+    /* إجبار فاتح/داكن عبر data-theme */
+    html[data-theme="light"]{
+      --bg:#f5f7fb; --card:#ffffff; --border:#e6e8ef; --muted:#7c8499;
+      --primary:#3b5bdb; --primary-weak:#ecf1ff; --text:#0f1220;
+    }
+    html[data-theme="dark"]{
+      --bg:#0f1220; --card:#171a2b; --border:#2a2e43; --muted:#a2a8c3;
+      --primary:#7b90ff; --primary-weak:#1e2450; --text:#e8ecff;
+    }
+
+    body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial;margin:0}
     .container{max-width:900px;margin:24px auto;padding:16px}
     .card{background:var(--card);border:1px solid var(--border);border-radius:16px;
           padding:18px;margin:14px 0;box-shadow:0 6px 18px rgba(0,0,0,.06)}
@@ -18,8 +31,9 @@
     .grades{width:100%;border-collapse:collapse;margin-top:8px;border-radius:12px;overflow:hidden}
     .grades th,.grades td{border:1px solid var(--border);padding:12px;text-align:center}
     .grades th{background:#f3f5fb}
+    html[data-theme="dark"] .grades th{background:#1d223a}
     .btn{padding:10px 14px;border:1px solid #cfd3df;border-radius:10px;background:var(--primary-weak);
-         cursor:pointer;font-weight:600}
+         cursor:pointer;font-weight:600;color:var(--text)}
     .btn:hover{filter:brightness(.98)}
     .muted{color:var(--muted);font-size:12px}
     .header-row{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
@@ -27,21 +41,43 @@
     .res-item{display:flex;justify-content:space-between;gap:12px;align-items:center;
               padding:10px 12px;border:1px solid var(--border);border-radius:10px;margin-bottom:8px;
               background:#fff}
+    html[data-theme="dark"] .res-item{background:#14182b}
     .res-item a{font-weight:600;text-decoration:none}
     .res-meta{color:var(--muted);font-size:12px}
     .ann-list{list-style:none;padding:0;margin:0}
     .ann-item{display:flex;gap:12px;align-items:flex-start;padding:12px;border:1px solid var(--border);
-              border-radius:12px;background:#fff;margin-bottom:10px}
+              border-radius:12px;background:var(--card);margin-bottom:10px}
     .badge{padding:4px 8px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap}
     .badge.hw{background:#fff3bf}
     .badge.exam{background:#ffe3e3}
     .badge.info{background:#e7f5ff}
     .ann-date{color:var(--muted);font-size:12px}
+    .topbar{display:flex;justify-content:space-between;align-items:center;gap:12px}
+
+    /* شريط إعلان متحرك (يعرض كل الإعلانات) */
+    #topNotice{display:none;margin:12px 0 16px;padding:0;border:1px solid #ffd8a8;background:#fff4e6;border-radius:10px;overflow:hidden}
+    .ticker{position:relative;white-space:nowrap;overflow:hidden;padding:10px 14px}
+    .ticker__track{display:inline-block;will-change:transform;animation:marquee 18s linear infinite}
+    @keyframes marquee{
+      0%{transform:translateX(0)}
+      100%{transform:translateX(-50%)}
+    }
+    .ticker__item{margin-inline-end:24px}
   </style>
 </head>
 <body>
   <main class="container">
-    <h1 style="text-align:center;">بوابة الدرجات</h1>
+    <div class="topbar">
+      <h1 style="margin:0;">بوابة الدرجات</h1>
+      <button class="btn" id="toggleTheme">الوضع الداكن</button>
+    </div>
+
+    <!-- شريط الإعلان -->
+    <div id="topNotice">
+      <div class="ticker">
+        <div id="tickerTrack" class="ticker__track"></div>
+      </div>
+    </div>
 
     <section class="card">
       <label for="classSelect">اختر الفصل:</label>
@@ -67,37 +103,47 @@
 
     <section class="card" id="resourcesSection">
       <h2>المراجع والخطط</h2>
-
       <h3>أوراق العمل / المذكرات</h3>
       <ul id="wsList" class="list"></ul>
-
       <h3>الخطط الأسبوعية</h3>
       <ul id="plansList" class="list"></ul>
-
-      <!-- قسم كتاب الطالب الجديد -->
       <h3 id="bookHeader" style="display:none;">كتاب الطالب</h3>
       <ul id="bookList" class="list"></ul>
-
       <h3 id="linksHeader" style="display:none;">روابط مفيدة</h3>
       <ul id="linksList" class="list"></ul>
-      <div class="muted"><code></code></div>
     </section>
 
     <section class="card" id="announcementsSection">
       <h2>الإعلانات</h2>
       <ul id="annList" class="ann-list"></ul>
-      <div class="muted"><code></code></div>
+      <div class="muted">   <code></code></div>
     </section>
 
     <footer><small>© <span id="year"></span> معلم التقنية الرقمية: عبدالمجيد الغامدي</small></footer>
   </main>
 
   <script>
+    /* ====== تبديل الوضع (يبدأ دائمًا بالفاتح) ====== */
+    const toggleThemeBtn = document.getElementById("toggleTheme");
+    function applyTheme(t){
+      document.documentElement.dataset.theme = t;
+      localStorage.setItem("theme", t);
+      toggleThemeBtn.textContent = t === "dark" ? "الوضع الفاتح" : "الوضع الداكن";
+    }
+    // يبدأ دائمًا بالفاتح إلا إذا محفوظ "داكن"
+    const savedTheme = localStorage.getItem("theme");
+    applyTheme(savedTheme ? savedTheme : "light");
+    toggleThemeBtn.onclick = ()=> applyTheme(
+      (document.documentElement.dataset.theme === "dark") ? "light" : "dark"
+    );
+
+    /* ====== ثوابت الاعتراض ====== */
     const GOOGLE_FORMS_OBJECTION_BASE =
       "https://docs.google.com/forms/d/e/1FAIpQLSeIvg3cD2YHY-wfpuX6d15xXxjft2BVfpdKI0NRaRG3BY98yg/viewform?usp=pp_url";
     const ENTRY_NAME_ID  = "entry.284994531";
     const ENTRY_CLASS_ID = "entry.1748397745";
 
+    /* ====== أعمدة الدرجات ====== */
     const COLUMNS = [
       { key: "Homework", label: "الواجبات" },
       { key: "Research", label: "البحث" },
@@ -108,6 +154,7 @@
     ];
     const EXCLUDE_FROM_TOTAL = new Set(['Absence']);
 
+    /* ====== عناصر DOM ====== */
     const classSelect = document.getElementById("classSelect");
     const studentSection = document.getElementById("studentSection");
     const studentSelect = document.getElementById("studentSelect");
@@ -124,9 +171,12 @@
     const linksHeader = document.getElementById("linksHeader");
     const bookList = document.getElementById("bookList");
     const bookHeader = document.getElementById("bookHeader");
+    const tickerTrack = document.getElementById("tickerTrack");
+    const topNotice = document.getElementById("topNotice");
 
     let DATA = null, currentClass = null;
 
+    /* ====== تحميل بيانات الطلاب ====== */
     async function loadData() {
       let res = await fetch("students.json", { cache: "no-store" });
       if (!res.ok) res = await fetch("data/students.json", { cache: "no-store" });
@@ -183,6 +233,7 @@
       };
     }
 
+    /* ====== الموارد ====== */
     async function loadResources() {
       try {
         let res = await fetch("data/resources.json", { cache: "no-store" });
@@ -190,7 +241,6 @@
         if (!res.ok) return;
         const data = await res.json();
 
-        // أوراق العمل/المذكرات
         wsList.innerHTML = "";
         (data.worksheets || []).forEach(w => {
           const li = document.createElement("li");
@@ -200,7 +250,6 @@
           wsList.appendChild(li);
         });
 
-        // الخطط الأسبوعية
         plansList.innerHTML = "";
         (data.plans || []).forEach(p => {
           const li = document.createElement("li");
@@ -210,7 +259,6 @@
           plansList.appendChild(li);
         });
 
-        // كتاب الطالب (جديد)
         bookList.innerHTML = "";
         const books = data.book || [];
         if (books.length > 0) {
@@ -226,7 +274,6 @@
           bookHeader.style.display = "none";
         }
 
-        // روابط مفيدة (اختياري)
         linksList.innerHTML = "";
         const hasLinks = (data.links || []).length > 0;
         linksHeader.style.display = hasLinks ? "block" : "none";
@@ -240,12 +287,15 @@
       } catch(e) { console.warn("resources error", e); }
     }
 
+    /* ====== الإعلانات + الشريط المتحرك (كل الإعلانات) ====== */
     async function loadAnnouncements() {
       try {
         let res = await fetch("data/announcements.json", {cache:"no-store"});
         if (!res.ok) res = await fetch("announcements.json", {cache:"no-store"});
         if (!res.ok) return;
         const items = await res.json();
+
+        // قائمة الإعلانات
         const ul = document.getElementById("annList");
         ul.innerHTML = "";
         items.sort((a,b)=> new Date(b.date) - new Date(a.date));
@@ -262,9 +312,25 @@
             </div>`;
           ul.appendChild(li);
         }
+
+        // شريط أعلى الصفحة (يعرض كل الإعلانات بوضوح)
+        if (items.length){
+          const texts = items.map(it => {
+            const prefix = (it.type === "exam" ? "📘 اختبار: " : it.type === "hw" ? "📝 واجب: " : "ℹ️ إعلان: ");
+            return prefix + it.title;
+          });
+          // كرر القائمة مرتين عشان يكون التمرير مستمر
+          tickerTrack.innerHTML =
+            texts.map(t => `<span class="ticker__item">${t}</span>`).join("") +
+            texts.map(t => `<span class="ticker__item">${t}</span>`).join("");
+          topNotice.style.display = "block";
+        } else {
+          topNotice.style.display = "none";
+        }
       } catch(e) { console.warn("announcements error", e); }
     }
 
+    /* ====== تفاعلات ====== */
     classSelect.addEventListener("change", () => {
       currentClass = classSelect.value || null;
       gradesSection.style.display = "none";
@@ -286,6 +352,8 @@
     });
 
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // تحميل الكل
     Promise.all([loadData(), loadResources()]).then(loadAnnouncements).catch(e => { alert(e.message); console.error(e); });
   </script>
 </body>
