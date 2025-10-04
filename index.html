@@ -67,19 +67,26 @@
 
     <section class="card" id="resourcesSection">
       <h2>المراجع والخطط</h2>
+
       <h3>أوراق العمل / المذكرات</h3>
       <ul id="wsList" class="list"></ul>
+
       <h3>الخطط الأسبوعية</h3>
       <ul id="plansList" class="list"></ul>
+
+      <!-- قسم كتاب الطالب الجديد -->
+      <h3 id="bookHeader" style="display:none;">كتاب الطالب</h3>
+      <ul id="bookList" class="list"></ul>
+
       <h3 id="linksHeader" style="display:none;">روابط مفيدة</h3>
       <ul id="linksList" class="list"></ul>
-      <div class="muted">     <code></code></div>
+      <div class="muted"><code></code></div>
     </section>
 
     <section class="card" id="announcementsSection">
       <h2>الإعلانات</h2>
       <ul id="annList" class="ann-list"></ul>
-      <div class="muted">   <code></code></div>
+      <div class="muted"><code></code></div>
     </section>
 
     <footer><small>© <span id="year"></span> معلم التقنية الرقمية: عبدالمجيد الغامدي</small></footer>
@@ -115,6 +122,8 @@
     const plansList = document.getElementById("plansList");
     const linksList = document.getElementById("linksList");
     const linksHeader = document.getElementById("linksHeader");
+    const bookList = document.getElementById("bookList");
+    const bookHeader = document.getElementById("bookHeader");
 
     let DATA = null, currentClass = null;
 
@@ -180,30 +189,52 @@
         if (!res.ok) res = await fetch("resources.json", { cache: "no-store" });
         if (!res.ok) return;
         const data = await res.json();
+
+        // أوراق العمل/المذكرات
         wsList.innerHTML = "";
         (data.worksheets || []).forEach(w => {
           const li = document.createElement("li");
           li.className = "res-item";
-          li.innerHTML = `<a href=\"${w.file}\" target=\"_blank\" rel=\"noopener\">${w.title}</a>
-                          <span class=\"res-meta\">PDF</span>`;
+          li.innerHTML = `<a href="${w.file}" target="_blank" rel="noopener">${w.title}</a>
+                          <span class="res-meta">PDF</span>`;
           wsList.appendChild(li);
         });
+
+        // الخطط الأسبوعية
         plansList.innerHTML = "";
         (data.plans || []).forEach(p => {
           const li = document.createElement("li");
           li.className = "res-item";
-          li.innerHTML = `<a href=\"${p.file}\" target=\"_blank\" rel=\"noopener\">${p.title}</a>
-                          <span class=\"res-meta\">خطة أسبوعية</span>`;
+          li.innerHTML = `<a href="${p.file}" target="_blank" rel="noopener">${p.title}</a>
+                          <span class="res-meta">خطة أسبوعية</span>`;
           plansList.appendChild(li);
         });
+
+        // كتاب الطالب (جديد)
+        bookList.innerHTML = "";
+        const books = data.book || [];
+        if (books.length > 0) {
+          bookHeader.style.display = "block";
+          books.forEach(b => {
+            const li = document.createElement("li");
+            li.className = "res-item";
+            li.innerHTML = `<a href="${b.file}" target="_blank" rel="noopener">${b.title}</a>
+                            <span class="res-meta">PDF</span>`;
+            bookList.appendChild(li);
+          });
+        } else {
+          bookHeader.style.display = "none";
+        }
+
+        // روابط مفيدة (اختياري)
         linksList.innerHTML = "";
         const hasLinks = (data.links || []).length > 0;
         linksHeader.style.display = hasLinks ? "block" : "none";
         (data.links || []).forEach(l => {
           const li = document.createElement("li");
           li.className = "res-item";
-          li.innerHTML = `<a href=\"${l.url}\" target=\"_blank\" rel=\"noopener\">${l.title}</a>
-                          <span class=\"res-meta\">رابط</span>`;
+          li.innerHTML = `<a href="${l.url}" target="_blank" rel="noopener">${l.title}</a>
+                          <span class="res-meta">رابط</span>`;
           linksList.appendChild(li);
         });
       } catch(e) { console.warn("resources error", e); }
@@ -223,11 +254,11 @@
           li.className = "ann-item";
           const dateStr = new Date(it.date).toLocaleDateString('ar-SA');
           const badgeClass = it.type === "exam" ? "exam" : (it.type === "hw" ? "hw" : "info");
-          li.innerHTML = `<span class=\"badge ${badgeClass}\">${it.type === "exam" ? "اختبار" : it.type === "hw" ? "واجب" : "إعلان"}</span>
+          li.innerHTML = `<span class="badge ${badgeClass}">${it.type === "exam" ? "اختبار" : it.type === "hw" ? "واجب" : "إعلان"}</span>
             <div>
-              <div style=\"font-weight:700\">${it.title}</div>
+              <div style="font-weight:700">${it.title}</div>
               <div>${it.text || ""}</div>
-              <div class=\"ann-date\">${dateStr}</div>
+              <div class="ann-date">${dateStr}</div>
             </div>`;
           ul.appendChild(li);
         }
