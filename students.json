@@ -87,7 +87,7 @@
         "grades": {
           "Homework": 10.0,
           "Research": 5.0,
-          "ClassActivity": 10.0,
+          "ClassActivity": 15.0,
           "Absence": 2.0,
           "Theoretical": 0.0,
           "Practical": 0.0
@@ -107,7 +107,7 @@
         "grades": {
           "Homework": 10.0,
           "Research": 5.0,
-          "ClassActivity": 10.0,
+          "ClassActivity": 15.0,
           "Absence": 1.0,
           "Theoretical": 0.0,
           "Practical": 0.0
@@ -187,7 +187,7 @@
         "grades": {
           "Homework": 10.0,
           "Research": 0.0,
-          "ClassActivity": 13.0,
+          "ClassActivity": 15.0,
           "Absence": 1.0,
           "Theoretical": 0.0,
           "Practical": 0.0
@@ -607,7 +607,7 @@
         "grades": {
           "Homework": 10.0,
           "Research": 0.0,
-          "ClassActivity": 10.0,
+          "ClassActivity": 15.0,
           "Absence": 1.0,
           "Theoretical": 0.0,
           "Practical": 0.0
@@ -647,7 +647,7 @@
         "grades": {
           "Homework": 10.0,
           "Research": 5.0,
-          "ClassActivity": 10.0,
+          "ClassActivity": 15.0,
           "Absence": 1.0,
           "Theoretical": 0.0,
           "Practical": 0.0
@@ -707,7 +707,7 @@
         "grades": {
           "Homework": 10.0,
           "Research": 5.0,
-          "ClassActivity": 10.0,
+          "ClassActivity": 15.0,
           "Absence": 3.0,
           "Theoretical": 0.0,
           "Practical": 0.0
