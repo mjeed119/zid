@@ -5,23 +5,54 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>بوابة الدرجات</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .header-row {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+    .btn {
+      padding:8px 12px;
+      border:1px solid #cfd3df;
+      border-radius:8px;
+      background:#f5f7ff;
+      cursor:pointer;
+    }
+    .btn:disabled { opacity:.5; cursor:not-allowed; }
+    .grades { width:100%; border-collapse: collapse; margin-top: 8px; }
+    .grades th, .grades td { border:1px solid #e8eaf2; padding:10px; text-align:center; }
+    .grades th { background:#f3f5fb; }
+    .card { background:#fff; border:1px solid #e6e8ef; border-radius:12px; padding:16px; margin:12px 0; box-shadow:0 1px 3px rgba(0,0,0,.05); }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Tahoma, Arial; background:#f6f7fb; margin:0; }
+    .container { max-width: 900px; margin: 24px auto; padding: 16px; }
+  </style>
 </head>
 <body>
   <main class="container">
     <h1 style="text-align: center;">ثانوية زيد بن سهل الانصاري</h1><br>
     <h1>بوابة الدرجات</h1>
+
+    <!-- اختيار الفصل -->
     <section class="card">
       <label for="classSelect">اختر الفصل:</label>
       <select id="classSelect"><option value="">— اختر —</option></select>
     </section>
 
+    <!-- اختيار الطالب -->
     <section class="card" id="studentSection" style="display:none">
       <label for="studentSelect">اختر اسمك:</label>
       <select id="studentSelect"><option value="">— اختر —</option></select>
     </section>
 
+    <!-- بطاقة الدرجات -->
     <section class="card" id="gradesSection" style="display:none">
-      <h2 id="studentHeader"></h2>
+      <div class="header-row">
+        <h2 id="studentHeader"></h2>
+        <!-- ✅ زر الاعتراض هنا بجانب الاسم -->
+        <button id="objectionBtn" class="btn" disabled>تقديم اعتراض</button>
+      </div>
       <div id="gradesTableWrapper"></div>
       <div class="totals">
         <div>المجموع: <span id="totalScore">—</span></div>
@@ -29,34 +60,42 @@
       </div>
     </section>
 
-    <footer><small>© <span id="year"></span>  معلم التقنية الرقمية:عبدالمجيد الغامدي</small></footer>
+    <footer><small>© <span id="year"></span> معلم التقنية الرقمية: عبدالمجيد الغامدي</small></footer>
   </main>
 
   <script>
+    // رابط النموذج الأساسي
+    const GOOGLE_FORMS_OBJECTION_BASE =
+      "https://docs.google.com/forms/d/e/1FAIpQLSeIvg3cD2YHY-wfpuX6d15xXxjft2BVfpdKI0NRaRG3BY98yg/viewform?usp=pp_url";
+
+    // entry IDs من رابط pre-filled
+    const ENTRY_NAME_ID  = "entry.284994531";   // اسم الطالب
+    const ENTRY_CLASS_ID = "entry.1748397745"; // الفصل
+
     const COLUMNS = [
       { key: "Homework", label: "الواجبات" },
       { key: "Research", label: "البحث" },
       { key: "ClassActivity", label: "النشاط الصفي" },
-      { key: "Absence", label: "الغياب" },
+      { key: "Absence", label: "الغياب" }, // مستبعد من المجموع
       { key: "Theoretical", label: "الاختبار النظري" },
       { key: "Practical", label: "الاختبار العملي" }
     ];
 
-    const classSelect = document.getElementById("classSelect");
-    const studentSection = document.getElementById("studentSection");
-    const studentSelect = document.getElementById("studentSelect");
-    const gradesSection = document.getElementById("gradesSection");
-    const studentHeader = document.getElementById("studentHeader");
+    const classSelect        = document.getElementById("classSelect");
+    const studentSection     = document.getElementById("studentSection");
+    const studentSelect      = document.getElementById("studentSelect");
+    const gradesSection      = document.getElementById("gradesSection");
+    const studentHeader      = document.getElementById("studentHeader");
     const gradesTableWrapper = document.getElementById("gradesTableWrapper");
-    const totalScoreEl = document.getElementById("totalScore");
-    const percentScoreEl = document.getElementById("percentScore");
+    const totalScoreEl       = document.getElementById("totalScore");
+    const percentScoreEl     = document.getElementById("percentScore");
+    const objectionBtn       = document.getElementById("objectionBtn");
 
     let DATA = null, currentClass = null;
 
     async function loadData() {
-      // جرّب الجذر أولًا ثم data/ احتياطًا
-let res = await fetch("students.json", { cache: "no-store" });
-if (!res.ok) res = await fetch("data/students.json", { cache: "no-store" });
+      let res = await fetch("students.json", { cache: "no-store" });
+      if (!res.ok) res = await fetch("data/students.json", { cache: "no-store" });
       if (!res.ok) throw new Error("تعذّر تحميل data/students.json");
       DATA = await res.json();
       const classes = Object.keys(DATA.classes || {});
@@ -71,7 +110,7 @@ if (!res.ok) res = await fetch("data/students.json", { cache: "no-store" });
     function populateStudents(className) {
       studentSelect.innerHTML = '<option value="">— اختر —</option>';
       const students = DATA.classes[className] || [];
-      students.sort((a,b)=> new Intl.Collator('ar').compare(a.name,b.name));
+      students.sort((a, b) => new Intl.Collator('ar').compare(a.name, b.name));
       for (const s of students) {
         const opt = document.createElement("option");
         opt.value = s.id; opt.textContent = s.name;
@@ -88,20 +127,39 @@ if (!res.ok) res = await fetch("data/students.json", { cache: "no-store" });
       table.appendChild(thead);
 
       const tbody = document.createElement("tbody");
+      const EXCLUDE_FROM_TOTAL = new Set(['Absence']);
       let total = 0, maxTotal = 0;
+
       for (const col of COLUMNS) {
         const score = Number(student.grades?.[col.key] ?? 0);
         const outOf = Number(student.max?.[col.key] ?? 0);
+
         const tr = document.createElement("tr");
         tr.innerHTML = `<td>${col.label}</td><td>${score}</td>`;
         tbody.appendChild(tr);
-        total += score; maxTotal += outOf;
+
+        if (!EXCLUDE_FROM_TOTAL.has(col.key)) {
+          total += score;
+          maxTotal += outOf;
+        }
       }
+
       table.appendChild(tbody);
-      gradesTableWrapper.innerHTML = ""; gradesTableWrapper.appendChild(table);
+      gradesTableWrapper.innerHTML = "";
+      gradesTableWrapper.appendChild(table);
 
       totalScoreEl.textContent = `${total} / ${maxTotal}`;
       percentScoreEl.textContent = maxTotal ? ((total / maxTotal) * 100).toFixed(2) : "0.00";
+
+      // تفعيل الزر بعد اختيار الطالب
+      objectionBtn.disabled = false;
+      objectionBtn.onclick = () => {
+        const params = new URLSearchParams();
+        params.set(ENTRY_CLASS_ID, currentClass);
+        params.set(ENTRY_NAME_ID, student.name);
+        const url = GOOGLE_FORMS_OBJECTION_BASE + "&" + params.toString();
+        window.open(url, "_blank");
+      };
     }
 
     classSelect.addEventListener("change", () => {
