@@ -11,3 +11,4 @@ select { width:100%; padding:10px 12px; border:1px solid #cfd3df; border-radius:
 .grades th { background:#f3f5fb; }
 .totals { display:flex; gap:16px; margin-top:10px; font-weight:600; }
 footer { text-align:center; margin-top:24px; color:#666; }
+body{font-family:system-ui,-apple-system,'Segoe UI',Tahoma,Arial;background:#f5f7fb;margin:0;}

@@ -6,51 +6,56 @@
   <title>بوابة الدرجات</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    .header-row {
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      flex-wrap:wrap;
-      gap:8px;
-    }
-    .btn {
-      padding:8px 12px;
-      border:1px solid #cfd3df;
-      border-radius:8px;
-      background:#f5f7ff;
-      cursor:pointer;
-    }
-    .btn:disabled { opacity:.5; cursor:not-allowed; }
-    .grades { width:100%; border-collapse: collapse; margin-top: 8px; }
-    .grades th, .grades td { border:1px solid #e8eaf2; padding:10px; text-align:center; }
-    .grades th { background:#f3f5fb; }
-    .card { background:#fff; border:1px solid #e6e8ef; border-radius:12px; padding:16px; margin:12px 0; box-shadow:0 1px 3px rgba(0,0,0,.05); }
-    body { font-family: system-ui, -apple-system, "Segoe UI", Tahoma, Arial; background:#f6f7fb; margin:0; }
-    .container { max-width: 900px; margin: 24px auto; padding: 16px; }
+    :root{ --bg:#f5f7fb; --card:#ffffff; --border:#e6e8ef; --muted:#7c8499;
+           --primary:#3b5bdb; --primary-weak:#ecf1ff; --ok:#2f9e44; --warn:#f08c00; }
+    body{background:var(--bg);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial}
+    .container{max-width:900px;margin:24px auto;padding:16px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;
+          padding:18px;margin:14px 0;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+    h1,h2,h3{margin:.25rem 0 .5rem}
+    label{font-weight:600;margin-bottom:6px;display:inline-block}
+    select{padding:10px 12px;border:1px solid var(--border);border-radius:10px;background:#fff}
+    .grades{width:100%;border-collapse:collapse;margin-top:8px;border-radius:12px;overflow:hidden}
+    .grades th,.grades td{border:1px solid var(--border);padding:12px;text-align:center}
+    .grades th{background:#f3f5fb}
+    .btn{padding:10px 14px;border:1px solid #cfd3df;border-radius:10px;background:var(--primary-weak);
+         cursor:pointer;font-weight:600}
+    .btn:hover{filter:brightness(.98)}
+    .muted{color:var(--muted);font-size:12px}
+    .header-row{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+    .list{list-style:none;padding:0;margin:0}
+    .res-item{display:flex;justify-content:space-between;gap:12px;align-items:center;
+              padding:10px 12px;border:1px solid var(--border);border-radius:10px;margin-bottom:8px;
+              background:#fff}
+    .res-item a{font-weight:600;text-decoration:none}
+    .res-meta{color:var(--muted);font-size:12px}
+    .ann-list{list-style:none;padding:0;margin:0}
+    .ann-item{display:flex;gap:12px;align-items:flex-start;padding:12px;border:1px solid var(--border);
+              border-radius:12px;background:#fff;margin-bottom:10px}
+    .badge{padding:4px 8px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap}
+    .badge.hw{background:#fff3bf}
+    .badge.exam{background:#ffe3e3}
+    .badge.info{background:#e7f5ff}
+    .ann-date{color:var(--muted);font-size:12px}
   </style>
 </head>
 <body>
   <main class="container">
-    <h1 style="text-align: center;">ثانوية زيد بن سهل الانصاري</h1><br>
-    <h1>بوابة الدرجات</h1>
+    <h1 style="text-align:center;">بوابة الدرجات</h1>
 
-    <!-- اختيار الفصل -->
     <section class="card">
       <label for="classSelect">اختر الفصل:</label>
       <select id="classSelect"><option value="">— اختر —</option></select>
     </section>
 
-    <!-- اختيار الطالب -->
     <section class="card" id="studentSection" style="display:none">
       <label for="studentSelect">اختر اسمك:</label>
       <select id="studentSelect"><option value="">— اختر —</option></select>
     </section>
 
-    <!-- بطاقة الدرجات -->
     <section class="card" id="gradesSection" style="display:none">
       <div class="header-row">
         <h2 id="studentHeader"></h2>
-        <!-- ✅ زر الاعتراض هنا بجانب الاسم -->
         <button id="objectionBtn" class="btn" disabled>تقديم اعتراض</button>
       </div>
       <div id="gradesTableWrapper"></div>
@@ -60,36 +65,56 @@
       </div>
     </section>
 
+    <section class="card" id="resourcesSection">
+      <h2>المراجع والخطط</h2>
+      <h3>أوراق العمل / المذكرات</h3>
+      <ul id="wsList" class="list"></ul>
+      <h3>الخطط الأسبوعية</h3>
+      <ul id="plansList" class="list"></ul>
+      <h3 id="linksHeader" style="display:none;">روابط مفيدة</h3>
+      <ul id="linksList" class="list"></ul>
+      <div class="muted">* يتم جلب العناصر تلقائيًا من <code>data/resources.json</code></div>
+    </section>
+
+    <section class="card" id="announcementsSection">
+      <h2>الإعلانات</h2>
+      <ul id="annList" class="ann-list"></ul>
+      <div class="muted">* تُحدَّث من <code>data/announcements.json</code></div>
+    </section>
+
     <footer><small>© <span id="year"></span> معلم التقنية الرقمية: عبدالمجيد الغامدي</small></footer>
   </main>
 
   <script>
-    // رابط النموذج الأساسي
     const GOOGLE_FORMS_OBJECTION_BASE =
       "https://docs.google.com/forms/d/e/1FAIpQLSeIvg3cD2YHY-wfpuX6d15xXxjft2BVfpdKI0NRaRG3BY98yg/viewform?usp=pp_url";
-
-    // entry IDs من رابط pre-filled
-    const ENTRY_NAME_ID  = "entry.284994531";   // اسم الطالب
-    const ENTRY_CLASS_ID = "entry.1748397745"; // الفصل
+    const ENTRY_NAME_ID  = "entry.284994531";
+    const ENTRY_CLASS_ID = "entry.1748397745";
 
     const COLUMNS = [
       { key: "Homework", label: "الواجبات" },
       { key: "Research", label: "البحث" },
       { key: "ClassActivity", label: "النشاط الصفي" },
-      { key: "Absence", label: "الغياب" }, // مستبعد من المجموع
+      { key: "Absence", label: "الغياب" },
       { key: "Theoretical", label: "الاختبار النظري" },
       { key: "Practical", label: "الاختبار العملي" }
     ];
+    const EXCLUDE_FROM_TOTAL = new Set(['Absence']);
 
-    const classSelect        = document.getElementById("classSelect");
-    const studentSection     = document.getElementById("studentSection");
-    const studentSelect      = document.getElementById("studentSelect");
-    const gradesSection      = document.getElementById("gradesSection");
-    const studentHeader      = document.getElementById("studentHeader");
+    const classSelect = document.getElementById("classSelect");
+    const studentSection = document.getElementById("studentSection");
+    const studentSelect = document.getElementById("studentSelect");
+    const gradesSection = document.getElementById("gradesSection");
+    const studentHeader = document.getElementById("studentHeader");
     const gradesTableWrapper = document.getElementById("gradesTableWrapper");
-    const totalScoreEl       = document.getElementById("totalScore");
-    const percentScoreEl     = document.getElementById("percentScore");
-    const objectionBtn       = document.getElementById("objectionBtn");
+    const totalScoreEl = document.getElementById("totalScore");
+    const percentScoreEl = document.getElementById("percentScore");
+    const objectionBtn = document.getElementById("objectionBtn");
+
+    const wsList = document.getElementById("wsList");
+    const plansList = document.getElementById("plansList");
+    const linksList = document.getElementById("linksList");
+    const linksHeader = document.getElementById("linksHeader");
 
     let DATA = null, currentClass = null;
 
@@ -110,7 +135,7 @@
     function populateStudents(className) {
       studentSelect.innerHTML = '<option value="">— اختر —</option>';
       const students = DATA.classes[className] || [];
-      students.sort((a, b) => new Intl.Collator('ar').compare(a.name, b.name));
+      students.sort((a,b)=> new Intl.Collator('ar').compare(a.name,b.name));
       for (const s of students) {
         const opt = document.createElement("option");
         opt.value = s.id; opt.textContent = s.name;
@@ -125,33 +150,20 @@
       const thead = document.createElement("thead");
       thead.innerHTML = "<tr><th>البند</th><th>الدرجة</th></tr>";
       table.appendChild(thead);
-
       const tbody = document.createElement("tbody");
-      const EXCLUDE_FROM_TOTAL = new Set(['Absence']);
       let total = 0, maxTotal = 0;
-
       for (const col of COLUMNS) {
         const score = Number(student.grades?.[col.key] ?? 0);
         const outOf = Number(student.max?.[col.key] ?? 0);
-
         const tr = document.createElement("tr");
         tr.innerHTML = `<td>${col.label}</td><td>${score}</td>`;
         tbody.appendChild(tr);
-
-        if (!EXCLUDE_FROM_TOTAL.has(col.key)) {
-          total += score;
-          maxTotal += outOf;
-        }
+        if (!EXCLUDE_FROM_TOTAL.has(col.key)) { total += score; maxTotal += outOf; }
       }
-
       table.appendChild(tbody);
-      gradesTableWrapper.innerHTML = "";
-      gradesTableWrapper.appendChild(table);
-
+      gradesTableWrapper.innerHTML = ""; gradesTableWrapper.appendChild(table);
       totalScoreEl.textContent = `${total} / ${maxTotal}`;
       percentScoreEl.textContent = maxTotal ? ((total / maxTotal) * 100).toFixed(2) : "0.00";
-
-      // تفعيل الزر بعد اختيار الطالب
       objectionBtn.disabled = false;
       objectionBtn.onclick = () => {
         const params = new URLSearchParams();
@@ -162,9 +174,70 @@
       };
     }
 
+    async function loadResources() {
+      try {
+        let res = await fetch("data/resources.json", { cache: "no-store" });
+        if (!res.ok) res = await fetch("resources.json", { cache: "no-store" });
+        if (!res.ok) return;
+        const data = await res.json();
+        wsList.innerHTML = "";
+        (data.worksheets || []).forEach(w => {
+          const li = document.createElement("li");
+          li.className = "res-item";
+          li.innerHTML = `<a href=\"${w.file}\" target=\"_blank\" rel=\"noopener\">${w.title}</a>
+                          <span class=\"res-meta\">PDF</span>`;
+          wsList.appendChild(li);
+        });
+        plansList.innerHTML = "";
+        (data.plans || []).forEach(p => {
+          const li = document.createElement("li");
+          li.className = "res-item";
+          li.innerHTML = `<a href=\"${p.file}\" target=\"_blank\" rel=\"noopener\">${p.title}</a>
+                          <span class=\"res-meta\">خطة أسبوعية</span>`;
+          plansList.appendChild(li);
+        });
+        linksList.innerHTML = "";
+        const hasLinks = (data.links || []).length > 0;
+        linksHeader.style.display = hasLinks ? "block" : "none";
+        (data.links || []).forEach(l => {
+          const li = document.createElement("li");
+          li.className = "res-item";
+          li.innerHTML = `<a href=\"${l.url}\" target=\"_blank\" rel=\"noopener\">${l.title}</a>
+                          <span class=\"res-meta\">رابط</span>`;
+          linksList.appendChild(li);
+        });
+      } catch(e) { console.warn("resources error", e); }
+    }
+
+    async function loadAnnouncements() {
+      try {
+        let res = await fetch("data/announcements.json", {cache:"no-store"});
+        if (!res.ok) res = await fetch("announcements.json", {cache:"no-store"});
+        if (!res.ok) return;
+        const items = await res.json();
+        const ul = document.getElementById("annList");
+        ul.innerHTML = "";
+        items.sort((a,b)=> new Date(b.date) - new Date(a.date));
+        for (const it of items) {
+          const li = document.createElement("li");
+          li.className = "ann-item";
+          const dateStr = new Date(it.date).toLocaleDateString('ar-SA');
+          const badgeClass = it.type === "exam" ? "exam" : (it.type === "hw" ? "hw" : "info");
+          li.innerHTML = `<span class=\"badge ${badgeClass}\">${it.type === "exam" ? "اختبار" : it.type === "hw" ? "واجب" : "إعلان"}</span>
+            <div>
+              <div style=\"font-weight:700\">${it.title}</div>
+              <div>${it.text || ""}</div>
+              <div class=\"ann-date\">${dateStr}</div>
+            </div>`;
+          ul.appendChild(li);
+        }
+      } catch(e) { console.warn("announcements error", e); }
+    }
+
     classSelect.addEventListener("change", () => {
       currentClass = classSelect.value || null;
       gradesSection.style.display = "none";
+      objectionBtn.disabled = true;
       if (!currentClass) { studentSection.style.display = "none"; return; }
       populateStudents(currentClass);
       studentSection.style.display = "block";
@@ -182,7 +255,7 @@
     });
 
     document.getElementById("year").textContent = new Date().getFullYear();
-    loadData().catch(e => { alert(e.message); console.error(e); });
+    Promise.all([loadData(), loadResources()]).then(loadAnnouncements).catch(e => { alert(e.message); console.error(e); });
   </script>
 </body>
 </html>
