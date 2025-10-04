@@ -1851,7 +1851,7 @@
         "grades": {
           "Homework": 10.0,
           "Research": 5.0,
-          "ClassActivity": 10.0,
+          "ClassActivity": 15.0,
           "Absence": 0.0,
           "Theoretical": 0.0,
           "Practical": 0.0
